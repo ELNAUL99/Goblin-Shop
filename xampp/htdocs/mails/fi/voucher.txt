@@ -1,0 +1,15 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Tilaustunniste {order_name} - Kupongin koodi luotu
+
+Iloksemme voimme ilmoittaa että nimellesi on luotu kuponki tilauksen viite {order_name} johdosta.
+
+KUPONGIN KOODI: {voucher_num} summalle {voucher_amount}
+
+Käyttääksesi sitä, kopioi/liitä tämä koodi kassalla ostoksia tehdessäsi.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

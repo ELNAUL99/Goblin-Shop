@@ -1,0 +1,15 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Asiakaspalvelu - Keskustelu välitetty edelleen
+
+{employee} halusi välittää tämän keskustelun sinulle.
+
+Keskusteluhistoria: {messages}
+
+{employee} lisäsi {comment}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

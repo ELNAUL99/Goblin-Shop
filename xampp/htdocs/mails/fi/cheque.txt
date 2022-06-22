@@ -1,0 +1,27 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Kiitos ostoksistasi - {shop_name}!
+
+Tilaustunniste {order_name} - Odotetaan maksua shekillä
+
+Tilauksesi viitteellä {order_name} on luotu ja lähetetään heti kun maksusuorituksesi on rekisteröity.
+
+Maksutapa: sekki
+
+Olet valinnut maksutavaksi shekin. Nämä tiedot tarvitset shekkiisi:
+
+Summa:  {total_paid}
+
+Maksettavaa tilauksesta:  {check_name}
+
+Ole hyvä ja lähetä sekkisi osoitteeseen:  {check_address_html}
+
+Seurataksesi tilaustasi ja ladataksesi laskun verkkokaupastamme mene osoitteeseen [Tilaushistoria ja tiedot]({history_url}) kohtaan asiakastililläsi.
+
+Jos sinulla on vierastili, voit seurata tilaustasi [Vierailijoiden seuranta]({guest_tracking_url}) osiosta kaupassamme.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

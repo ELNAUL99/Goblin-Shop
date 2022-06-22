@@ -1,0 +1,19 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+{meta_products}
+
+Tilaustunniste {order_name} - Toimituksessa
+
+Tilauksesi viitteellä {order_name} on matkalla.
+
+Voit seurata lähetystä osoitteessa: {followup}
+
+Seurataksesi tilaustasi ja ladataksesi laskun verkkokaupastamme mene osoitteeseen [Tilaushistoria ja tiedot]({history_url}) kohtaan asiakastililläsi.
+
+Jos sinulla on vierastili, voit seurata tilaustasi [Vierailijoiden seuranta]({guest_tracking_url}) osiosta kaupassamme.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

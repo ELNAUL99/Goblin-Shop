@@ -1,0 +1,197 @@
+-- MariaDB dump 10.17  Distrib 10.4.14-MariaDB, for Win64 (AMD64)
+--
+-- Host: localhost    Database: FILMEX_mikovuori
+-- ------------------------------------------------------
+-- Server version	10.4.14-MariaDB
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `attendance`
+--
+
+DROP TABLE IF EXISTS `attendance`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `attendance` (
+  `MeetingDate` datetime DEFAULT NULL,
+  `MemberAttended` char(1) DEFAULT NULL,
+  `MemberId` int(11) DEFAULT NULL,
+  `LocationId` int(11) DEFAULT NULL,
+  KEY `MemberId` (`MemberId`),
+  KEY `LocationId` (`LocationId`),
+  CONSTRAINT `attendance_ibfk_1` FOREIGN KEY (`MemberId`) REFERENCES `memberdetails` (`MemberId`),
+  CONSTRAINT `attendance_ibfk_2` FOREIGN KEY (`LocationId`) REFERENCES `location` (`LocationId`),
+  CONSTRAINT `attendance_ibfk_3` FOREIGN KEY (`LocationId`) REFERENCES `location` (`LocationId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `attendance`
+--
+
+LOCK TABLES `attendance` WRITE;
+/*!40000 ALTER TABLE `attendance` DISABLE KEYS */;
+INSERT INTO `attendance` VALUES ('2004-01-01 00:00:00','Y',1,2),('2004-01-01 00:00:00','N',4,2),('2004-01-01 00:00:00','Y',5,2),('2004-01-01 00:00:00','Y',6,2),('2004-03-01 00:00:00','Y',1,1),('2004-03-01 00:00:00','Y',4,1),('2004-03-01 00:00:00','N',5,1),('2004-03-01 00:00:00','N',6,1);
+/*!40000 ALTER TABLE `attendance` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `category`
+--
+
+DROP TABLE IF EXISTS `category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `category` (
+  `CategoryId` int(11) NOT NULL,
+  `Category` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`CategoryId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `category`
+--
+
+LOCK TABLES `category` WRITE;
+/*!40000 ALTER TABLE `category` DISABLE KEYS */;
+INSERT INTO `category` VALUES (1,'Thriller'),(2,'Romance'),(3,'Horror'),(4,'War'),(5,'Sci-fi'),(6,'Historical');
+/*!40000 ALTER TABLE `category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `favcategory`
+--
+
+DROP TABLE IF EXISTS `favcategory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `favcategory` (
+  `CategoryId` int(11) DEFAULT NULL,
+  `MemberId` int(11) DEFAULT NULL,
+  KEY `CategoryId` (`CategoryId`),
+  KEY `MemberId` (`MemberId`),
+  CONSTRAINT `favcategory_ibfk_1` FOREIGN KEY (`CategoryId`) REFERENCES `category` (`CategoryId`),
+  CONSTRAINT `favcategory_ibfk_2` FOREIGN KEY (`MemberId`) REFERENCES `memberdetails` (`MemberId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `favcategory`
+--
+
+LOCK TABLES `favcategory` WRITE;
+/*!40000 ALTER TABLE `favcategory` DISABLE KEYS */;
+INSERT INTO `favcategory` VALUES (1,5),(2,1),(4,6),(4,1),(5,4),(1,10),(3,10),(1,10),(3,10),(6,10),(4,11),(3,11),(5,11),(1,12),(4,12),(6,12),(3,13),(5,13),(2,14),(6,14);
+/*!40000 ALTER TABLE `favcategory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `films`
+--
+
+DROP TABLE IF EXISTS `films`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `films` (
+  `FilmId` int(11) NOT NULL,
+  `FilmName` varchar(100) DEFAULT NULL,
+  `YearReleased` int(11) DEFAULT NULL,
+  `PlotSummary` text DEFAULT NULL,
+  `AvailableOnDVD` char(1) DEFAULT NULL,
+  `Rating` int(11) DEFAULT NULL,
+  `CategoryId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`FilmId`),
+  KEY `CategoryId` (`CategoryId`),
+  CONSTRAINT `films_ibfk_1` FOREIGN KEY (`CategoryId`) REFERENCES `category` (`CategoryId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `films`
+--
+
+LOCK TABLES `films` WRITE;
+/*!40000 ALTER TABLE `films` DISABLE KEYS */;
+INSERT INTO `films` VALUES (1,'The Dirty Half Dozen',1987,'Six men go to war wearing unwashed uniforms. The horror!','N',2,4),(2,'On Golden Puddle',1967,'A couple find love while wading through a puddle.','Y',4,2),(3,'The Lion, the Witch, and the Chest of Drawers',1977,'A fun film for all those interested in zoo/magic/furniture drama.','N',1,3),(4,'Nightmare on Oak Street, Part 23',1997,'The murderous Terry stalks Oak Street.','Y',2,3),(5,'The Wide-Brimmed Hat',2005,'Fascinating life story of a wide-brimmed hat','N',1,5),(6,'Sense and Insensitivity',2001,'She longs for a new life with Mr. Arcy; he longs for a small cottage in the Hamptons.','Y',3,6),(7,'Planet of the Japes',1967,'Earth has been destroyed, to be taken over by a species of comedians.','Y',5,4),(8,'The Maltese Poodle',1947,'A mysterious bite mark, a guilty-looking poodle. First class thriller.','Y',1,1),(9,'15th Late Afternoon',1989,'One of Shakespeare\'s lesser-known plays','N',5,6),(10,'Soylent Yellow',1967,'Detective Billy Brambles discovers that Soylent Yellow is made of soya bean. Ewwww!','Y',5,5),(11,'One Flew Over the Crow\'s Nest',1975,'Life and times of a scary crow.','Y',2,3),(12,'Raging Bullocks',1980,'A pair of bulls get cross with each other.','N',4,1),(13,'The Life Of Bob',1984,'A 7 hour drama about Bob\'s life. What fun!','Y',1,1),(14,'Gone With the Window Cleaner',1988,'Historical documentary on window cleaners. Thrilling','Y',3,6),(15,'The Good, the Bad, and the Facially Challenged',1989,'Joe seeks plastic surgery in this spaghetti Western.','Y',5,6);
+/*!40000 ALTER TABLE `films` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `location`
+--
+
+DROP TABLE IF EXISTS `location`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `location` (
+  `LocationId` int(11) NOT NULL,
+  `Street` varchar(100) DEFAULT NULL,
+  `City` varchar(100) DEFAULT NULL,
+  `State` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`LocationId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `location`
+--
+
+LOCK TABLES `location` WRITE;
+/*!40000 ALTER TABLE `location` DISABLE KEYS */;
+INSERT INTO `location` VALUES (1,'Main Street','Big Apple City','New State'),(2,'Winding Road','Windy Village','Golden State'),(3,'Tiny Terrace','Big City','Mega State');
+/*!40000 ALTER TABLE `location` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `memberdetails`
+--
+
+DROP TABLE IF EXISTS `memberdetails`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `memberdetails` (
+  `MemberId` int(11) NOT NULL,
+  `FirstName` varchar(50) DEFAULT NULL,
+  `LastName` varchar(50) DEFAULT NULL,
+  `DateOfBirth` datetime DEFAULT NULL,
+  `Street` varchar(100) DEFAULT NULL,
+  `City` varchar(75) DEFAULT NULL,
+  `State` varchar(75) DEFAULT NULL,
+  `ZipCode` varchar(12) DEFAULT NULL,
+  `Email` varchar(200) DEFAULT NULL,
+  `DateOfJoining` datetime DEFAULT NULL,
+  PRIMARY KEY (`MemberId`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `memberdetails`
+--
+
+LOCK TABLES `memberdetails` WRITE;
+/*!40000 ALTER TABLE `memberdetails` DISABLE KEYS */;
+INSERT INTO `memberdetails` VALUES (1,'Katie','Smith','1977-01-09 00:00:00','Main Road','Townsville','Mega State','123456','katie@mail.com','2004-02-23 00:00:00'),(4,'Steve','Gee','1967-10-05 00:00:00','The Road','Windy Village','Golden State','65424','steve@gee.com','2004-02-22 00:00:00'),(5,'John','Jones','1952-10-05 00:00:00','New Lane','Big Apple City','New State','88776','jj@jonesmail.org','2005-01-02 00:00:00'),(6,'Jenny','Jones','1953-08-25 00:00:00','New Lane','Big Apple City','New State','88776','jj@jonesmail.org','2005-01-02 00:00:00'),(7,'John','Jackson','1974-05-27 00:00:00','Long Lane','Big City','New State','88992','jjackson@mailme.net','2005-11-21 00:00:00'),(8,'Jack','Johnson','1945-06-09 00:00:00','Main Street','Big City','Mega State','34566','jjohnson@me.com','2005-06-02 00:00:00'),(9,'Seymour','Botts','1956-10-21 00:00:00','Long Lane','Windy Village','Golden State','65422','Seymour@botts.org','2005-07-17 00:00:00'),(10,'Susie','Simons','1937-01-20 00:00:00','Main Road','Townsville','Mega State','123456','susie@mailme.com','2005-08-20 00:00:00'),(11,'Jamie','Hills','1992-07-17 00:00:00','Newish Lane','Orange Town','New State','88776','jamie@the_hills.com','2005-08-22 00:00:00'),(12,'Stuart','Dales','1956-08-07 00:00:00','Long Lane','Windy Village','Golden State','65422','sdales@mymail.org','2005-08-27 00:00:00'),(13,'William','Doors','1994-05-28 00:00:00','Winding Road','Big City','Mega State','34512','knockon@thedoors.com','2005-08-29 00:00:00'),(14,'Doris','Night','1997-05-28 00:00:00','White Cliff Street','Dover','Golden State','68122','dnight@whitecliffs.net','2005-09-02 00:00:00'),(15,'Catherine','Hawthorn',NULL,NULL,NULL,NULL,NULL,'chawthorn@mailme.org','2005-08-25 00:00:00');
+/*!40000 ALTER TABLE `memberdetails` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-10-24 22:26:57

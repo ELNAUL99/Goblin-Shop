@@ -1,0 +1,17 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Tilaustunniste {order_name} - Maksuvirhe
+
+Tilauksesi viite {order_name} kaupassamme {shop_name} maksussa tapahtui virhe. Ota meihin yhteyttä mahdollisimman pian.
+
+Voit odottaa toimitusta kun maksusi on vastaanotettu.
+
+Seurataksesi tilaustasi ja ladataksesi laskun verkkokaupastamme mene osoitteeseen [Tilaushistoria ja tiedot]({history_url}) kohtaan asiakastililläsi.
+
+Jos sinulla on vierastili, voit seurata tilaustasi [Vierailijoiden seuranta]({guest_tracking_url}) osiosta kaupassamme.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

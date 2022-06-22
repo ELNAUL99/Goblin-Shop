@@ -1,0 +1,41 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Kiitos ostoksistasi - {shop_name}!
+
+Tilaustiedot
+
+Tilaus: {order_name} Jätetty {date}
+
+Maksutapa: {payment}
+
+Viite	Tuote	Yksikköhinta	Määrä	Yhteensä  {products_txt} {discounts_txt}
+Tuotteet	{total_products}
+Alennukset	{total_discounts}
+Lahjapaketointi	{total_wrapping}
+Toimitus	{total_shipping}
+Sisältäen verot	{total_tax_paid}
+Maksettu yhteensä	{total_paid}
+
+Toimitus
+
+Toimitustapa: {carrier}
+
+Maksutapa: {payment}
+
+Toimitusosoite
+
+{delivery_block_txt}
+
+Laskutusosoite
+
+{invoice_block_txt}
+
+Seurataksesi tilaustasi ja ladataksesi laskun verkkokaupastamme mene osoitteeseen [Tilaushistoria ja tiedot]({history_url}) kohtaan asiakastililläsi.
+
+Jos sinulla on vierastili, voit seurata tilaustasi [Vierailijoiden seuranta]({guest_tracking_url}) osiosta kaupassamme.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

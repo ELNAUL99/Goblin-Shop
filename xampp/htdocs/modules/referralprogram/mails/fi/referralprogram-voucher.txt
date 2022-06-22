@@ -1,0 +1,14 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Sponsorointiohjelma
+
+Olemme tehneet sinulle henkilökohtaisen alennuskupongin kiitoksena kauppamme suosittelemisesta ystävällesi.
+Tässä on alennuskuponkisi koodi: {voucher_num}, arvoltaan {voucher_num}
+
+Kopioi/liitä tämä koodi tilauslomakkeelle seuraavan tilauksesi maksuvaiheessa.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

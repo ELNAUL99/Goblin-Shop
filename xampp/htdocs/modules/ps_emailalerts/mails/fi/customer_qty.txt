@@ -1,0 +1,13 @@
+{shop_url}
+
+Hei,
+
+{product} on nyt saatavilla.
+
+Hyviä uutisia, tuotetta on taas varastossa!
+
+Klikkaa seuraavaa linkkiä vierailleksasi tuotesivulla ja tilaa se: [{product}]({product_link})
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

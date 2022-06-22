@@ -1,0 +1,15 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Kiitos tilauksestasi.
+
+Haluamme kiittää ja tarjota sinulle {amount}% alennuksen seuraavasta tilauksestasi! Tämä tarjous on voimassa {days} päivää, joten älä viivyttele!
+
+Tässä on ALENNUSKOODISI: {voucher_num}
+
+Saadaksesi alennuksen anna tämä koodi ostoskorissa.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

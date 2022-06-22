@@ -1,0 +1,41 @@
+{shop_url}
+
+Onnittelut!
+
+Uusi tilaus {shop_name} verkkokaupasta seuraavan asiakkaan toimesta: {firstname} {lastname} ({email})
+
+Tilaustiedot
+
+Tilaus: {order_name} Jätetty {date}
+
+Maksutapa: {payment}
+
+Viite	Tuote	Yksikköhinta	Määrä	Yhteensä   {items}
+Tuotteet	{total_products}
+Alennukset	{total_discounts}
+Lahjapaketointi	{total_wrapping}
+Toimitus	{total_shipping}
+Sisältäen verot	{total_tax_paid}
+Maksettu yhteensä	{total_paid}
+
+Toimitustapa
+
+Toimitustapa: {carrier}
+
+Maksutapa: {payment}
+
+Toimitusosoite
+
+{delivery_block_html}
+
+Laskutusosoite
+
+{invoice_block_html}
+
+Asiakkaan viesti:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

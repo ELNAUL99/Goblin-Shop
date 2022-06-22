@@ -1,0 +1,19 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Ostoskorisi kaupassa {shop_name}
+
+Olet yksi parhaista asiakkastamme, mutta et ole tehnyt yhtään tilausta viimeiseen {days_threshold} päivään.
+
+Ostoskorisi on tallennettu. Voit palata tilaukseen kaupassamme: {shop_url}
+
+Haluamme kiittää ja tarjota sinulle {amount}% alennuksen seuraavasta tilauksestasi! Tämä tarjous on voimassa {days} päivää, joten älä viivyttele!
+
+Tässä on ALENNUSKOODISI: {voucher_num}
+
+Saadaksesi alennuksen anna tämä koodi ostoskorissa.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

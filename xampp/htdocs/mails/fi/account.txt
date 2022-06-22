@@ -1,0 +1,27 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+{shop_name} kiittää asiakastilin luomisesta.
+
+Sähköpostiosoitteesi kirjautumiseen on {shop_name}
+
+Kirjautumistietosi:
+
+Sähköpostiosoite: {email}
+
+Tärkeitä turvallisuusvihjeitä:
+
+1. Pidäthän kirjautumistietosi tallessa.
+
+2. Älä koskaan anna kirjautumistietojasi toiselle henkilölle.
+
+3. Vaihdathan salasanan säännöllisesti.
+
+4. Mikäli epäilet että joku käyttää tiliäsi luvatta, ole hyvä ja ota meihin yhteyttä välittömästi.
+
+Voit nyt tehdä tilauksia kaupassamme: [{shop_name}]({shop_url})
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

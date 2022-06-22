@@ -1,0 +1,11 @@
+{shop_url}
+
+Hei,
+
+Varastosaldo on nyt alhaisempi kuin asetettu alaraja: {warning_coverage}
+
+Nykyinen varaston kattavuus: {current_coverage}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

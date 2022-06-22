@@ -1,0 +1,4 @@
+id;shop_name;gender;lastname;firstname;email;subscribed;subscribed_on;iso_language
+1;presta;Mr.;DOE;John;pub@prestashop.com;1;2013-12-13 08:19:15;en
+8;presta;Mr.;Karjalainen;Juuso;presta@not.really.anywhere;1;2021-12-03 19:53:59;en
+N1;presta;;;;Juuso.karjalainen1997@gmail.com;1;2021-12-05 14:35:55;en

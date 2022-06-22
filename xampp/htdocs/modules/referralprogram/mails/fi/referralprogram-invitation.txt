@@ -1,0 +1,17 @@
+{shop_url}
+
+{firstname_friend} {lastname_friend}, Liity mukaan!
+
+Ystäväsi {firstname} {lastname} haluaa suositella sinulle verkkokauppaa [{shop_name}]({shop_url})!
+
+Olemme iloisia voidessamme tarjota sinulle alennuskupongin joka on arvoltaan 1]{discount}. Voit käyttää sitä seuraavassa tilauksessasi. Suosittele kauppaamme ja ansaitse alennuskuponki {discount}!
+
+[Liittyminen on helppoa, klikkaa vain tästä!]({link})
+
+Kun liityt, älä unohda antaa kaverisi sähköpostiosoitetta, joka suositteli sinulle kauppaamme: {email}.
+
+Ystävällisin terveisin,
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

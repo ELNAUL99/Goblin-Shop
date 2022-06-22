@@ -1,0 +1,2 @@
+*ERROR* 	v1.7.7.7	2021/12/02 - 22:20:24: Link to database cannot be established: SQLSTATE[HY000] [2002] Yhteytt&auml; ei voi muodostaa, koska kohdekone ei salli sit&auml;.
+ at line 136 in file classes/db/DbPDO.php

@@ -1,0 +1,15 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Viesti lähettäjältä {shop_name}
+
+Olet saanut uuden viestin verkkokaupasta {shop_name} koskien tilausta viitteellä {order_name}.
+
+Viesti:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

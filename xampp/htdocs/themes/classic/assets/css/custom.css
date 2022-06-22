@@ -1,0 +1,306 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+ 
+ 
+ 
+/*SEARCH BAR CUSTOM TESTING*/
+/*
+form {
+	top: -73px;
+	left: -393px;
+}
+*/
+/*
+.search-widget form {
+	position: relative;
+	top: -79px;
+	left: -500px;
+}
+
+
+#header .header-nav {
+	margin-bottom: 60px;
+}
+
+#header .header-nav #_desktop_contact_link #contact-link {
+	position: relative;
+    right: -793px;
+    
+}
+
+#header .header-nav #_desktop_contact_link {
+	position: relative;
+    right: -793px;
+}
+
+#_desktop_cart {
+	position: relative;
+	top: 20px;
+}
+#header .header-nav .user-info {
+	position: relative;
+	top: -20px;
+}
+*/
+
+
+
+
+/*
+#header .logo {
+	position: absolute;
+	top: -16px;
+	height: 48px; 
+}
+*/
+
+
+/*
+#header .logo {
+	position: absolute;
+	top: -66px;
+	height: 60px; 
+}
+*/
+#header .header-nav .cart-preview.active {
+    background: black;
+}
+#header .header-nav .cart-preview.active a, #header .header-nav .cart-preview.active i {
+    color: white;
+}
+
+
+
+#header .header-nav .cart-preview .shopping-cart {
+	color: black;
+}
+#header .header-nav .blockcart {
+	color: black;
+}
+#header .header-nav .material-icons {
+	color: black;
+}
+
+#lnk-deals > a {
+	color: white;
+	background-color: black;
+	
+}
+
+
+#header .header-nav .right-nav a {
+	color: white;
+}
+i.material-icons {
+	font-weight: bold;
+	
+}
+#header .header-nav .material-icons {
+	color: black;
+}
+
+#_desktop_logo a{
+	height: 150px;
+}
+
+#wrapper {
+  background: white;
+}
+#header {
+  background: #488c5c;
+}
+#footer {
+	background: white;
+}
+.footer-container {
+	background: #488c5c;
+	
+}
+
+
+
+/*Header*/
+
+#category-8 > a {
+	color: black;
+	background-color: white;
+}
+#header > div.header-top > div > div:nth-child(1) > div.col-md-10.col-sm-12.position-static {
+	color: red;
+}
+#header > div.header-top {
+	background: grey;
+}
+div#top_sub_menu_26136 {
+	background-color: red;
+}
+#category-6 > a {
+	background-color: black;
+	color: yellow;
+}
+#category-3 > a {
+	background-color: black;
+}
+#category-9 > a {
+	background-color: black;
+	
+}
+#category-10 > a {
+	background-color: black;
+}
+#category-11 > a {
+	background-color: black;
+}
+
+
+#header .header-top a[data-depth="0"] {
+	color: white;
+}
+.top-menu .popover {
+	background-color: white;
+	color: white;
+	border: 2px yellow;
+}
+
+
+#contact-link a {
+	background-color: black;
+	border-radius: 4px;
+	padding: 3px;
+}
+
+
+
+
+/*
+img {
+	height: 28px;
+}
+*/
+.search-widget form input[type=text] {
+	padding: 6px;
+}
+
+
+/*FOOTERRRR*/
+
+/*All links*/
+#footer a {
+	color: white;
+}
+
+/*Products block */
+#footer > div.footer-container > div > div:nth-child(1) > div.col-md-6.links > div > div:nth-child(1) > p {
+	color: white;
+}
+
+/*Our company */
+#footer > div.footer-container > div > div:nth-child(1) > div.col-md-6.links > div > div:nth-child(2) > p {
+	color: white;
+}
+
+
+/*Account block*/
+
+#block_myaccount_infos .myaccount-title a {
+    color: white;
+}
+#footer_account_list > li {
+	color: white;
+}
+
+
+/*Store information block*/
+#footer > div.footer-container > div > div:nth-child(1) > div.block-contact.col-md-3.links.wrapper > div.hidden-sm-down > p {
+	color: white;
+}
+.block-contact {
+	color: white;
+}
+
+
+
+/*Products*/
+
+#products .product-description, .featured-products .product-description, .product-accessories .product-description, .product-miniature .product-description {
+	background: #0b2e0e;
+}
+#products .product-title a, .featured-products .product-title a, .product-accessories .product-title a, .product-miniature .product-title a {
+	color: #f4e100;
+	font-size: 16px;
+}
+#products .product-price-and-shipping, .featured-products .product-price-and-shipping, .product-accessories .product-price-and-shipping, .product-miniature .product-price-and-shipping {
+	color: white;
+	font-size: 20px;
+}
+.product-flags li.product-flag {
+	background: black;
+}
+
+.product {
+	background-color: #3b2a8a29;
+	border-radius: 14px;
+}
+.block-category.card.card-block {
+    border-radius: 14px;
+    border-style: solid;
+    border-width: 6px;
+    border-color: #bdd1be;
+}
+.products.row {
+    border-top: 20px solid #38733954;
+    border-radius: 1pc;
+    padding-top: 20px;
+}
+h2.h2.products-section-title.text-uppercase {
+    font-size: 199%;
+}
+h2.h2.products-section-title.text-uppercase {
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+.block-category card card-block .h1 h1 {
+	font-family: fantasy;
+    letter-spacing: 3px;
+}
+.page-content.page-cms ul, p {
+    font-size: 15px;
+    color: black;
+}
+
+
+/*Buttons*/
+.input-group .input-group-btn>.btn[data-action=show-password] {
+    background: #488c5c;
+    padding: 0.78rem 1rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #488c5c;
+    border-color: transparent;
+}
+label.btn.btn-default {
+    background-color: #488c5c;
+}
+.custom-radio input[type=radio]:checked+span {
+	background-color: #488c5c;
+}
+
+
+/*Front page texts */
+a.all-product-link.float-xs-left.float-md-right.h4 {
+    color: black;
+}
+
+
+/*social media icons*/
+.block-social ul li {
+	background-color: #0290c0;
+}
+
+.col-lg-4 {
+	float: right;
+	width: 25.33333%;
+}

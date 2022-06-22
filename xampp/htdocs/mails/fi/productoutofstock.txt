@@ -1,0 +1,15 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+{product} on lähes loppuunmyyty.
+
+Varastossa on nyt vähemmän kuin  {last_qty} [/ 1] tuotetta.
+
+Jäljellä varastossa: {qty}
+
+Lisätäksesi varastoa, siirry hallinnan  Katalogi> Varastot [/ 1] -osioon hallitaksesi varastoasi.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

@@ -1,0 +1,13 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Palautus #{id_order_return} - Päivitys
+
+Olemme päivittäneet tilan palautukselle #{id_order_return}, uusi tila on: "{state_order_return}".
+
+Seurataksesi tilaustasi ja ladataksesi laskun verkkokaupastamme mene osoitteeseen [Tilaushistoria ja tiedot]({history_url}) kohtaan asiakastililläsi.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

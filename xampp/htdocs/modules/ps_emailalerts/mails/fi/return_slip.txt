@@ -1,0 +1,29 @@
+{shop_url}
+
+Hei,
+
+Olet vastaanottanut uuden asiakaspalautuspyynnön {shop_name}.
+
+Palautuksen lisätiedot
+
+Tilaus: {order_name} Jätetty {date}
+
+Asiakas: {firstname} {lastname}, ({email})
+
+Viite	Tuote	Määrä   {items}
+
+Toimitusosoite
+
+{delivery_block_html}
+
+Laskutusosoite
+
+{invoice_block_html}
+
+Asiakkaan viesti:
+
+{message}
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)

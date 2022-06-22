@@ -1,0 +1,21 @@
+{shop_url}
+
+Hei {firstname} {lastname},
+
+Ostoskorisi kaupassa {shop_name}
+
+Kiitos vierailustasi, näyttää kuitenkin siltä että ostoksesi jäi kesken.
+
+Ostoskorisi on tallennettu. Voit palata tilaukseen kaupassamme: {shop_url}
+
+Haluamme kiittää ja tarjota sinulle {amount}% alennuksen seuraavasta tilauksestasi! Tämä tarjous on voimassa {days} päivää, joten älä viivyttele!
+
+Alennuskoodisi kauppaan {shop_name}
+
+Tässä on ALENNUSKOODISI: {voucher_num}
+
+Saadaksesi alennuksen anna tämä koodi ostoskorissa.
+
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail&utm_campaign=footer_1-7)
